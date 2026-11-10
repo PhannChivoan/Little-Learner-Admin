@@ -117,9 +117,9 @@ function renderLogin(box) {
     <section class="lg-form"><div class="lg-top">${langSwitch()}</div>
       <form class="lg-card card" id="lgForm" novalidate>
         <h2>Welcome back \u{1F44B}</h2><p class="muted">Sign in to the admin area. Only staff accounts can enter.</p>
-        <label class="lbl" for="lgEmail">Email</label><input class="in" id="lgEmail" type="email" autocomplete="username" placeholder="name@critter.academy" required>
+        <label class="lbl" for="lgEmail">Email</label><input class="in" id="lgEmail" type="email" autocomplete="username" value="admin@critter.academy" placeholder="name@critter.academy" required>
         <label class="lbl" for="lgPass">Password</label>
-        <div class="row gap8"><input class="in grow" id="lgPass" type="password" autocomplete="current-password" placeholder="Your password" required><button type="button" class="btn sm alt" id="lgShow" aria-pressed="false">Show</button></div>
+        <div class="row gap8"><input class="in grow" id="lgPass" type="password" autocomplete="current-password" placeholder="Your password" value="admin123" required><button type="button" class="btn sm alt" id="lgShow" aria-pressed="false">Show</button></div>
         <div class="row sp m8"><label class="row gap8 small"><input type="checkbox" id="lgRem" checked style="accent-color:var(--acc)"> Keep me signed in</label><button type="button" class="linkbtn" id="lgForgot">Forgot password?</button></div>
         <p class="lg-err" id="lgErr" role="alert" hidden></p>
         <button class="btn lg" id="lgGo" type="submit" style="width:100%;margin-top:14px">Sign in</button>
